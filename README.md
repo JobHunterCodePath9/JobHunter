@@ -28,8 +28,20 @@ An application where prospective job hunters can quickly swipe on jobs they woul
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* User picks the jobs they are interested in by swiping left (no) or right(yes)
+* After swiping left, the user’s resume will be automatically sent to the HR/recruiter
+* User authentication (account is remembered unless manually logged out)
+* Profile page that stores user basic information including resume, who he/she is, what he/she is looking for 
+* Dashboard that keeps track of all the emails sent/jobs liked
+* User can create a new account
+
+**Optional Nice-to-have Stories**
+
+* User can filter relevant jobs  
+* User can search up jobs
+* User can see the amount of people liked the job
+* Trending job page
+
 
 **Optional Nice-to-have Stories**
 

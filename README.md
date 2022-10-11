@@ -14,7 +14,7 @@ Original App Design Project - README Template
 An application where prospective job hunters can quickly swipe on jobs they would be interested in. If they meet the requirements for the job they will be put in a chat with a recruiter. 
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
+
 - **Category:** productivity / career
 - **Mobile:** Job Hunter would be mainly accessible through mobile devices but could possibly be launched on computers.
 - **Story:** Determines whether user meets job qualifications and puts them in touch with a recruiter. It will allow the user to easily navigate through relevant job listings and their descriptions.

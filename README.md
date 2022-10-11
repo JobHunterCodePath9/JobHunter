@@ -15,12 +15,12 @@ An application where prospective job hunters can quickly swipe on jobs they woul
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Category:** productivity / career
+- **Mobile:** Job Hunter would be mainly accessible through mobile devices but could possibly be launched on computers.
+- **Story:** Determines whether user meets job qualifications and puts them in touch with a recruiter. It will allow the user to easily navigate through relevant job listings and their descriptions.
+- **Market:** Individuals actively looking or browsing for jobs, who are in or about to enter the job force.
+- **Habit:** This app would be used primarily when looking for a job, so it would not be in use often.
+- **Scope:** The app would begin as a job search vessel as well as a way to connect with recuiters, and then it could evolve into a platform that fuels connections, possibly partnering with linkedIn or other job sites.
 
 ## Product Spec
 

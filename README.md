@@ -42,20 +42,23 @@ An application where prospective job hunters can quickly swipe on jobs they woul
 * User can see the amount of people liked the job
 * Trending job page
 
-
-**Optional Nice-to-have Stories**
-
-* [fill in your required user stories here]
-* ...
-
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Login Screen 
+   * User can login  
+* Registration Screen
+   * User can register
+* Stream
+   * Send network requests to job API to retrieve lists of job openings to display
+   * User has the option of viewing more information about the job opening
+   * Endless scrolling which paginates as user consumes content
+* Search
+   * User can search up job
+* Profile
+   * User can update their resume and information
+*Dashboard
+  * User can view all the jobs he/she liked 
+
 
 ### 3. Navigation
 

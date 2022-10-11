@@ -64,18 +64,26 @@ An application where prospective job hunters can quickly swipe on jobs they woul
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Profile / Settings
+* Dashboard
+* Job Search Home
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Login Screen 
+   * Home
+ * Registration Screen 
+   * Home
+* Home 
+   * Profile
+* Search Screen
+  * None
+* Profile
+  *DashBoard
+  * Logout
+* Logout screen 
+  * Login Screen
+
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]

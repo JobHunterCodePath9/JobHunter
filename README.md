@@ -1,7 +1,7 @@
 Original App Design Project - README Template
 ===
 
-# APP_NAME_HERE
+# Job Hunter
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -11,7 +11,7 @@ Original App Design Project - README Template
 
 ## Overview
 ### Description
-[Description of your app]
+An application where prospective job hunters can quickly swipe on jobs they would be interested in. If they meet the requirements for the job they will be put in a chat with a recruiter. 
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]

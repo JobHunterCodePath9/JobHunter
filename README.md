@@ -90,7 +90,7 @@ An application where prospective job hunters can quickly swipe on jobs they woul
 <img src="JobHunter copy 4.jpeg" width=600>
 
 ## Schema 
-[This section will be completed in Unit 9]
+
 ### Models
 
    | Property      | Type     | Description |

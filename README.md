@@ -98,6 +98,47 @@ An application where prospective job hunters can quickly swipe on jobs they woul
 ### Models
 [Add table of models]
 ### Networking
-- [Add list of network requests by screen ]
+- Home Feed Screen
+      - (Read/GET) Query all jobs from job aggretor API
+      - (Create/POST) Create a new request to apply to job
+   - Create Post Screen
+      - (Create/POST) Upload resume 
+   - Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
+      - (Update/PUT) Update user profile image
+   - Recruiter Profile Page
+      - (Read/GET) Query recruiter profile information from Random Profile API
+      - (Create/POST) Create direct message post to recruiter
 - [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- [OPTIONAL: List API endpoints]
+
+##### Random User API
+- Base URL - [https://randomuser.me/api/](https://randomuser.me/api/)
+
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | /        | returns a list of random users with randomly generated attributes
+    
+##### Arduna Job API
+- Base URL - [http://api.adzuna.com/v1/api/jobs](http://api.adzuna.com/v1/api/jobs)
+
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | /employerID | searches jobs for that employer
+    `GET`    | /keywords | searches for jobs with all keywords
+    `GET`    | /locationName| searches for jobs in location
+
+
+    
+##### REED Job API
+- Base URL - [https://www.reed.co.uk/api/1.0](https://www.reed.co.uk/api/1.0)
+
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | /employerID | searches jobs for that employer
+    `GET`    | /keywords | searches for jobs with all keywords
+    `GET`    | /locationName| searches for jobs in location
+
+
+

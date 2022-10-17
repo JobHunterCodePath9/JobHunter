@@ -87,7 +87,7 @@ An application where prospective job hunters can quickly swipe on jobs they woul
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="JobHunter copy 4.jpeg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 

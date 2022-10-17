@@ -96,7 +96,17 @@ An application where prospective job hunters can quickly swipe on jobs they woul
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for a job posting |
+   | applicant     | Pointer to User| applicant profile |
+   | resume        | File     | resume file |
+   | image         | File     | profile image|
+   | bio           | String   | description/ bio for each user|
+   | jDesc         | String   | job description|
+   | salary        | Number   | salary of job |
+   
 ### Networking
 - Home Feed Screen
       - (Read/GET) Query all jobs from job aggretor API
@@ -110,8 +120,8 @@ An application where prospective job hunters can quickly swipe on jobs they woul
    - Recruiter Profile Page
       - (Read/GET) Query recruiter profile information from Random Profile API
       - (Create/POST) Create direct message post to recruiter
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List API endpoints]
+      
+[OPTIONAL: List API endpoints]
 
 ##### Random User API
 - Base URL - [https://randomuser.me/api/](https://randomuser.me/api/)

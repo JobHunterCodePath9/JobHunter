@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0105309018F93D1A2A98AC8B /* Pods_JobHunter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CDD813EE4186D2B558D72C2 /* Pods_JobHunter.framework */; };
+		128D3BD3B19707DE39E6971F /* Pods_JobHunterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F1DA945E3B3AD8C255CAA3 /* Pods_JobHunterTests.framework */; };
+		3DCE78AAB3DB89ACA08FD2F6 /* Pods_JobHunter_JobHunterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E25F5EB2271E412458BD9E1 /* Pods_JobHunter_JobHunterUITests.framework */; };
+		A4DDEA3F28FF9C6B005DDDA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDEA3E28FF9C6B005DDDA8 /* AppDelegate.swift */; };
+		A4DDEA4128FF9C6B005DDDA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDEA4028FF9C6B005DDDA8 /* SceneDelegate.swift */; };
+		A4DDEA4328FF9C6B005DDDA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDEA4228FF9C6B005DDDA8 /* ViewController.swift */; };
+		A4DDEA4628FF9C6B005DDDA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4DDEA4428FF9C6B005DDDA8 /* Main.storyboard */; };
+		A4DDEA4828FF9C70005DDDA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4DDEA4728FF9C70005DDDA8 /* Assets.xcassets */; };
+		A4DDEA4B28FF9C70005DDDA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4DDEA4928FF9C70005DDDA8 /* LaunchScreen.storyboard */; };
+		A4DDEA5628FF9C70005DDDA8 /* JobHunterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDEA5528FF9C70005DDDA8 /* JobHunterTests.swift */; };
+		A4DDEA6028FF9C70005DDDA8 /* JobHunterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDEA5F28FF9C70005DDDA8 /* JobHunterUITests.swift */; };
+		A4DDEA6228FF9C70005DDDA8 /* JobHunterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDEA6128FF9C70005DDDA8 /* JobHunterUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4DDEA5228FF9C70005DDDA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4DDEA3328FF9C6B005DDDA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4DDEA3A28FF9C6B005DDDA8;
+			remoteInfo = JobHunter;
+		};
+		A4DDEA5C28FF9C70005DDDA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4DDEA3328FF9C6B005DDDA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4DDEA3A28FF9C6B005DDDA8;
+			remoteInfo = JobHunter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04B11372F7325A3FADB0887A /* Pods-JobHunter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHunter.release.xcconfig"; path = "Target Support Files/Pods-JobHunter/Pods-JobHunter.release.xcconfig"; sourceTree = "<group>"; };
+		0E25F5EB2271E412458BD9E1 /* Pods_JobHunter_JobHunterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobHunter_JobHunterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		163575A2128DBFA01088D470 /* Pods-JobHunter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHunter.debug.xcconfig"; path = "Target Support Files/Pods-JobHunter/Pods-JobHunter.debug.xcconfig"; sourceTree = "<group>"; };
+		19F1DA945E3B3AD8C255CAA3 /* Pods_JobHunterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobHunterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		215A83281848BED8BCFC4A33 /* Pods-JobHunterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHunterTests.debug.xcconfig"; path = "Target Support Files/Pods-JobHunterTests/Pods-JobHunterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2CDD813EE4186D2B558D72C2 /* Pods_JobHunter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobHunter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53B17EC3A240F8667C7600D8 /* Pods-JobHunter-JobHunterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHunter-JobHunterUITests.debug.xcconfig"; path = "Target Support Files/Pods-JobHunter-JobHunterUITests/Pods-JobHunter-JobHunterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B60B49EC01D0190A894D810 /* Pods-JobHunterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHunterTests.release.xcconfig"; path = "Target Support Files/Pods-JobHunterTests/Pods-JobHunterTests.release.xcconfig"; sourceTree = "<group>"; };
+		A4DDEA3B28FF9C6B005DDDA8 /* JobHunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobHunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4DDEA3E28FF9C6B005DDDA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4DDEA4028FF9C6B005DDDA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A4DDEA4228FF9C6B005DDDA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4DDEA4528FF9C6B005DDDA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4DDEA4728FF9C70005DDDA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4DDEA4A28FF9C70005DDDA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4DDEA4C28FF9C70005DDDA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4DDEA5128FF9C70005DDDA8 /* JobHunterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobHunterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4DDEA5528FF9C70005DDDA8 /* JobHunterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHunterTests.swift; sourceTree = "<group>"; };
+		A4DDEA5B28FF9C70005DDDA8 /* JobHunterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobHunterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4DDEA5F28FF9C70005DDDA8 /* JobHunterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHunterUITests.swift; sourceTree = "<group>"; };
+		A4DDEA6128FF9C70005DDDA8 /* JobHunterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHunterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E5EC67D1E44D182F33818FA9 /* Pods-JobHunter-JobHunterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHunter-JobHunterUITests.release.xcconfig"; path = "Target Support Files/Pods-JobHunter-JobHunterUITests/Pods-JobHunter-JobHunterUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4DDEA3828FF9C6B005DDDA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0105309018F93D1A2A98AC8B /* Pods_JobHunter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4DDEA4E28FF9C70005DDDA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				128D3BD3B19707DE39E6971F /* Pods_JobHunterTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4DDEA5828FF9C70005DDDA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DCE78AAB3DB89ACA08FD2F6 /* Pods_JobHunter_JobHunterUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0890890FF5656CFBBB1FFE13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CDD813EE4186D2B558D72C2 /* Pods_JobHunter.framework */,
+				0E25F5EB2271E412458BD9E1 /* Pods_JobHunter_JobHunterUITests.framework */,
+				19F1DA945E3B3AD8C255CAA3 /* Pods_JobHunterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4DDEA3228FF9C6B005DDDA8 = {
+			isa = PBXGroup;
+			children = (
+				A4DDEA3D28FF9C6B005DDDA8 /* JobHunter */,
+				A4DDEA5428FF9C70005DDDA8 /* JobHunterTests */,
+				A4DDEA5E28FF9C70005DDDA8 /* JobHunterUITests */,
+				A4DDEA3C28FF9C6B005DDDA8 /* Products */,
+				C0ECC8918F698F9EDC1B108A /* Pods */,
+				0890890FF5656CFBBB1FFE13 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A4DDEA3C28FF9C6B005DDDA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDEA3B28FF9C6B005DDDA8 /* JobHunter.app */,
+				A4DDEA5128FF9C70005DDDA8 /* JobHunterTests.xctest */,
+				A4DDEA5B28FF9C70005DDDA8 /* JobHunterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4DDEA3D28FF9C6B005DDDA8 /* JobHunter */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDEA3E28FF9C6B005DDDA8 /* AppDelegate.swift */,
+				A4DDEA4028FF9C6B005DDDA8 /* SceneDelegate.swift */,
+				A4DDEA4228FF9C6B005DDDA8 /* ViewController.swift */,
+				A4DDEA4428FF9C6B005DDDA8 /* Main.storyboard */,
+				A4DDEA4728FF9C70005DDDA8 /* Assets.xcassets */,
+				A4DDEA4928FF9C70005DDDA8 /* LaunchScreen.storyboard */,
+				A4DDEA4C28FF9C70005DDDA8 /* Info.plist */,
+			);
+			path = JobHunter;
+			sourceTree = "<group>";
+		};
+		A4DDEA5428FF9C70005DDDA8 /* JobHunterTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDEA5528FF9C70005DDDA8 /* JobHunterTests.swift */,
+			);
+			path = JobHunterTests;
+			sourceTree = "<group>";
+		};
+		A4DDEA5E28FF9C70005DDDA8 /* JobHunterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDEA5F28FF9C70005DDDA8 /* JobHunterUITests.swift */,
+				A4DDEA6128FF9C70005DDDA8 /* JobHunterUITestsLaunchTests.swift */,
+			);
+			path = JobHunterUITests;
+			sourceTree = "<group>";
+		};
+		C0ECC8918F698F9EDC1B108A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				163575A2128DBFA01088D470 /* Pods-JobHunter.debug.xcconfig */,
+				04B11372F7325A3FADB0887A /* Pods-JobHunter.release.xcconfig */,
+				53B17EC3A240F8667C7600D8 /* Pods-JobHunter-JobHunterUITests.debug.xcconfig */,
+				E5EC67D1E44D182F33818FA9 /* Pods-JobHunter-JobHunterUITests.release.xcconfig */,
+				215A83281848BED8BCFC4A33 /* Pods-JobHunterTests.debug.xcconfig */,
+				9B60B49EC01D0190A894D810 /* Pods-JobHunterTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4DDEA3A28FF9C6B005DDDA8 /* JobHunter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4DDEA6528FF9C70005DDDA8 /* Build configuration list for PBXNativeTarget "JobHunter" */;
+			buildPhases = (
+				B26A7A58050EAD66FF06C58F /* [CP] Check Pods Manifest.lock */,
+				A4DDEA3728FF9C6B005DDDA8 /* Sources */,
+				A4DDEA3828FF9C6B005DDDA8 /* Frameworks */,
+				A4DDEA3928FF9C6B005DDDA8 /* Resources */,
+				074A067E8B69F6A3364BED1B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JobHunter;
+			productName = JobHunter;
+			productReference = A4DDEA3B28FF9C6B005DDDA8 /* JobHunter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4DDEA5028FF9C70005DDDA8 /* JobHunterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4DDEA6828FF9C70005DDDA8 /* Build configuration list for PBXNativeTarget "JobHunterTests" */;
+			buildPhases = (
+				28629464F57EFE49952BD6A8 /* [CP] Check Pods Manifest.lock */,
+				A4DDEA4D28FF9C70005DDDA8 /* Sources */,
+				A4DDEA4E28FF9C70005DDDA8 /* Frameworks */,
+				A4DDEA4F28FF9C70005DDDA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4DDEA5328FF9C70005DDDA8 /* PBXTargetDependency */,
+			);
+			name = JobHunterTests;
+			productName = JobHunterTests;
+			productReference = A4DDEA5128FF9C70005DDDA8 /* JobHunterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A4DDEA5A28FF9C70005DDDA8 /* JobHunterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4DDEA6B28FF9C70005DDDA8 /* Build configuration list for PBXNativeTarget "JobHunterUITests" */;
+			buildPhases = (
+				B6188676B8F3BC302FB1BCA7 /* [CP] Check Pods Manifest.lock */,
+				A4DDEA5728FF9C70005DDDA8 /* Sources */,
+				A4DDEA5828FF9C70005DDDA8 /* Frameworks */,
+				A4DDEA5928FF9C70005DDDA8 /* Resources */,
+				84524D3E35ED77CB4E318143 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4DDEA5D28FF9C70005DDDA8 /* PBXTargetDependency */,
+			);
+			name = JobHunterUITests;
+			productName = JobHunterUITests;
+			productReference = A4DDEA5B28FF9C70005DDDA8 /* JobHunterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4DDEA3328FF9C6B005DDDA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					A4DDEA3A28FF9C6B005DDDA8 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					A4DDEA5028FF9C70005DDDA8 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = A4DDEA3A28FF9C6B005DDDA8;
+					};
+					A4DDEA5A28FF9C70005DDDA8 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = A4DDEA3A28FF9C6B005DDDA8;
+					};
+				};
+			};
+			buildConfigurationList = A4DDEA3628FF9C6B005DDDA8 /* Build configuration list for PBXProject "JobHunter" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4DDEA3228FF9C6B005DDDA8;
+			productRefGroup = A4DDEA3C28FF9C6B005DDDA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4DDEA3A28FF9C6B005DDDA8 /* JobHunter */,
+				A4DDEA5028FF9C70005DDDA8 /* JobHunterTests */,
+				A4DDEA5A28FF9C70005DDDA8 /* JobHunterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4DDEA3928FF9C6B005DDDA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4DDEA4B28FF9C70005DDDA8 /* LaunchScreen.storyboard in Resources */,
+				A4DDEA4828FF9C70005DDDA8 /* Assets.xcassets in Resources */,
+				A4DDEA4628FF9C6B005DDDA8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4DDEA4F28FF9C70005DDDA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4DDEA5928FF9C70005DDDA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		074A067E8B69F6A3364BED1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobHunter/Pods-JobHunter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobHunter/Pods-JobHunter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JobHunter/Pods-JobHunter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28629464F57EFE49952BD6A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JobHunterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84524D3E35ED77CB4E318143 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobHunter-JobHunterUITests/Pods-JobHunter-JobHunterUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobHunter-JobHunterUITests/Pods-JobHunter-JobHunterUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JobHunter-JobHunterUITests/Pods-JobHunter-JobHunterUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B26A7A58050EAD66FF06C58F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JobHunter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6188676B8F3BC302FB1BCA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JobHunter-JobHunterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4DDEA3728FF9C6B005DDDA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4DDEA4328FF9C6B005DDDA8 /* ViewController.swift in Sources */,
+				A4DDEA3F28FF9C6B005DDDA8 /* AppDelegate.swift in Sources */,
+				A4DDEA4128FF9C6B005DDDA8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4DDEA4D28FF9C70005DDDA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4DDEA5628FF9C70005DDDA8 /* JobHunterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4DDEA5728FF9C70005DDDA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4DDEA6228FF9C70005DDDA8 /* JobHunterUITestsLaunchTests.swift in Sources */,
+				A4DDEA6028FF9C70005DDDA8 /* JobHunterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4DDEA5328FF9C70005DDDA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4DDEA3A28FF9C6B005DDDA8 /* JobHunter */;
+			targetProxy = A4DDEA5228FF9C70005DDDA8 /* PBXContainerItemProxy */;
+		};
+		A4DDEA5D28FF9C70005DDDA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4DDEA3A28FF9C6B005DDDA8 /* JobHunter */;
+			targetProxy = A4DDEA5C28FF9C70005DDDA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4DDEA4428FF9C6B005DDDA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4DDEA4528FF9C6B005DDDA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4DDEA4928FF9C70005DDDA8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4DDEA4A28FF9C70005DDDA8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4DDEA6328FF9C70005DDDA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4DDEA6428FF9C70005DDDA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4DDEA6628FF9C70005DDDA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 163575A2128DBFA01088D470 /* Pods-JobHunter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LQRUCN56PN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JobHunter/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yfsdevelop.JobHunter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4DDEA6728FF9C70005DDDA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04B11372F7325A3FADB0887A /* Pods-JobHunter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LQRUCN56PN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JobHunter/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yfsdevelop.JobHunter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A4DDEA6928FF9C70005DDDA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 215A83281848BED8BCFC4A33 /* Pods-JobHunterTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LQRUCN56PN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yfsdevelop.JobHunterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JobHunter.app/JobHunter";
+			};
+			name = Debug;
+		};
+		A4DDEA6A28FF9C70005DDDA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B60B49EC01D0190A894D810 /* Pods-JobHunterTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LQRUCN56PN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yfsdevelop.JobHunterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JobHunter.app/JobHunter";
+			};
+			name = Release;
+		};
+		A4DDEA6C28FF9C70005DDDA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53B17EC3A240F8667C7600D8 /* Pods-JobHunter-JobHunterUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LQRUCN56PN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yfsdevelop.JobHunterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JobHunter;
+			};
+			name = Debug;
+		};
+		A4DDEA6D28FF9C70005DDDA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5EC67D1E44D182F33818FA9 /* Pods-JobHunter-JobHunterUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LQRUCN56PN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yfsdevelop.JobHunterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JobHunter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4DDEA3628FF9C6B005DDDA8 /* Build configuration list for PBXProject "JobHunter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4DDEA6328FF9C70005DDDA8 /* Debug */,
+				A4DDEA6428FF9C70005DDDA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4DDEA6528FF9C70005DDDA8 /* Build configuration list for PBXNativeTarget "JobHunter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4DDEA6628FF9C70005DDDA8 /* Debug */,
+				A4DDEA6728FF9C70005DDDA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4DDEA6828FF9C70005DDDA8 /* Build configuration list for PBXNativeTarget "JobHunterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4DDEA6928FF9C70005DDDA8 /* Debug */,
+				A4DDEA6A28FF9C70005DDDA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4DDEA6B28FF9C70005DDDA8 /* Build configuration list for PBXNativeTarget "JobHunterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4DDEA6C28FF9C70005DDDA8 /* Debug */,
+				A4DDEA6D28FF9C70005DDDA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4DDEA3328FF9C6B005DDDA8 /* Project object */;
+}

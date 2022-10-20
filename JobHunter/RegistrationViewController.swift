@@ -1,5 +1,5 @@
 //
-//  RegistationViewController.swift
+//  RegistrationViewController.swift
 //  JobHunter
 //
 //  Created by Mary Hanson on 10/19/22.
@@ -7,8 +7,9 @@
 
 import UIKit
 
-class RegistationViewController: UIViewController {
+class RegistrationViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

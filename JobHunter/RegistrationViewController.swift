@@ -8,7 +8,23 @@
 import UIKit
 
 class RegistrationViewController: UIViewController {
+    //MISSING: upload resume button - not sure what functionality that would be
 
+   //created weak variables for name, password, and email text fields
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    //created segue action for sign in button that goes straight to sign in page
+    @IBAction func signInButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "signInSegue", sender: nil)
+    }
+    
+    ////created the action for the register button that goes straight to the main **MUST ADD FUNCTIONALITY**
+    @IBAction func registerButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "registerSegue", sender: nil)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -49,6 +49,7 @@ class SignUpViewController: UIViewController {
                 self.performSegue(withIdentifier: "signinSegue", sender: nil)
             }
         }
+        // neef fix: should display msg then perfom segue, login should check if user exist rather than auto sign in 
         //self.performSegue(withIdentifier: "signinSegue", sender: nil)
                 
     }

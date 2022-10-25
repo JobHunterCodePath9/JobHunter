@@ -59,7 +59,7 @@ is looking for
 *Dashboard
   * User can view all the jobs he/she liked 
 
-##Sprint 1
+## Sprint 1
  
 <img src="sprint1ss.gif" width=600>
 

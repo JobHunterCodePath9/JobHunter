@@ -14,6 +14,7 @@
 		487B3AD92907366A0082A750 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B3AD82907366A0082A750 /* ChatViewController.swift */; };
 		487B3ADB290736BB0082A750 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B3ADA290736BB0082A750 /* ChatCell.swift */; };
 		487B3AE129073A5D0082A750 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B3AE029073A5D0082A750 /* MessageViewController.swift */; };
+		487B3AE32907686B0082A750 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B3AE22907686A0082A750 /* ProfileViewController.swift */; };
 		A456961329061E7200B4BB14 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A456961229061E7200B4BB14 /* LoginViewController.swift */; };
 		A4569617290623F800B4BB14 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4569616290623F800B4BB14 /* SignUpViewController.swift */; };
 		A4DDEA3F28FF9C6B005DDDA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDEA3E28FF9C6B005DDDA8 /* AppDelegate.swift */; };
@@ -54,6 +55,7 @@
 		487B3AD82907366A0082A750 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		487B3ADA290736BB0082A750 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		487B3AE029073A5D0082A750 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		487B3AE22907686A0082A750 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		53B17EC3A240F8667C7600D8 /* Pods-JobHunter-JobHunterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHunter-JobHunterUITests.debug.xcconfig"; path = "Target Support Files/Pods-JobHunter-JobHunterUITests/Pods-JobHunter-JobHunterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B60B49EC01D0190A894D810 /* Pods-JobHunterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHunterTests.release.xcconfig"; path = "Target Support Files/Pods-JobHunterTests/Pods-JobHunterTests.release.xcconfig"; sourceTree = "<group>"; };
 		A456961229061E7200B4BB14 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				487B3AD82907366A0082A750 /* ChatViewController.swift */,
 				487B3ADA290736BB0082A750 /* ChatCell.swift */,
 				487B3AE029073A5D0082A750 /* MessageViewController.swift */,
+				487B3AE22907686A0082A750 /* ProfileViewController.swift */,
 			);
 			path = JobHunter;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				A4569617290623F800B4BB14 /* SignUpViewController.swift in Sources */,
 				A4DDEA4128FF9C6B005DDDA8 /* SceneDelegate.swift in Sources */,
 				487B3ADB290736BB0082A750 /* ChatCell.swift in Sources */,
+				487B3AE32907686B0082A750 /* ProfileViewController.swift in Sources */,
 				487B3AD92907366A0082A750 /* ChatViewController.swift in Sources */,
 				487B3AD7290735B10082A750 /* MainViewController.swift in Sources */,
 			);

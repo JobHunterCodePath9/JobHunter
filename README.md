@@ -27,12 +27,13 @@ An application where prospective job hunters can quickly swipe on jobs they woul
 
 **Required Must-have Stories**
 
-* User picks the jobs they are interested in by swiping left (no) or right(yes)
-* After swiping left, the user’s resume will be automatically sent to the HR/recruiter
-* User authentication (account is remembered unless manually logged out)
-* Profile page that stores user basic information including resume, who he/she is, what he/she is looking for 
-* Dashboard that keeps track of all the emails sent/jobs liked
-* User can create a new account
+[] User picks the jobs they are interested in by swiping left (no) or right(yes)
+[] After swiping left, the user’s resume will be automatically sent to the HR/recruiter
+[] User authentication (account is remembered unless manually logged out)
+[x] Profile page that stores user basic information including resume, who he/she is, what he/she 
+is looking for 
+[x] Dashboard that keeps track of all the emails sent/jobs liked
+[x] User can create a new account
 
 **Optional Nice-to-have Stories**
 
@@ -43,9 +44,9 @@ An application where prospective job hunters can quickly swipe on jobs they woul
 
 ### 2. Screen Archetypes
 
-* Login Screen 
+* Login Screen [Completed] 
    * User can login  
-* Registration Screen
+* Registration Screen [Completed] 
    * User can register
 * Stream
    * Send network requests to job API to retrieve lists of job openings to display
@@ -53,17 +54,19 @@ An application where prospective job hunters can quickly swipe on jobs they woul
    * Endless scrolling which paginates as user consumes content
 * Search
    * User can search up job
-* Profile
+* Profile [Completed] 
    * User can update their resume and information
 *Dashboard
   * User can view all the jobs he/she liked 
 
+*Sprint 1 
+<img src="sprint1ss.gif" width=600>
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* Profile / Settings
+* Profile / Settings 
 * Dashboard
 * Job Search Home
 

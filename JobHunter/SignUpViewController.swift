@@ -32,21 +32,20 @@ class SignUpViewController: UIViewController {
         var email = self.emailText.text
        
         if (email!.isEmpty || username!.isEmpty || password!.isEmpty) {
-            self.displayAlert(withTitle: "Error", message: "All fields are required")
+            self.displayFailAlert(withTitle: "Error", message: "All fields are required")
         }
+        
         let user = PFUser()
                 
         user.email = email
         user.password = password
         user.username = username
         
-       
         user.signUpInBackground {(succeeded: Bool, error: Error?) -> Void in
             if let error = error {
-                self.displayAlert(withTitle: "Error", message: error.localizedDescription)
+                self.displayFailAlert(withTitle: "Error", message: error.localizedDescription)
             } else {
-                    self.displayAlert(withTitle: "Success", message: "Account has been successfully created")
-                self.performSegue(withIdentifier: "signinSegue", sender: nil)
+                self.displaySuccessAlert(withTitle: "Success", message: "Account has been successfully created")
             }
         }
         // neef fix: should display msg then perfom segue, login should check if user exist rather than auto sign in 
@@ -54,12 +53,22 @@ class SignUpViewController: UIViewController {
                 
     }
     
-    func displayAlert(withTitle title: String, message: String) {
-           let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-           let okAction = UIAlertAction(title: "Ok", style: .default)
-           alert.addAction(okAction)
-           self.present(alert, animated: true)
-       }
+    func displayFailAlert(withTitle title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default)
+        alert.addAction(okAction)
+        self.present(alert, animated: true)
+        
+    }
+    
+    func displaySuccessAlert(withTitle title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default, handler: { _ in
+            self.performSegue(withIdentifier: "signinSegue", sender: nil)
+        })
+        alert.addAction(okAction)
+        self.present(alert, animated: true)
+    }
     
     /*
     // MARK: - Navigation

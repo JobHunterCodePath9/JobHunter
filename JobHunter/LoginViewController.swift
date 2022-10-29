@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    //for some reason I could still perform the segue without putting an email/password
     @IBAction func onSignIn(_ sender: Any) {
         let email = emailText.text!
         let password  = passwordText.text!

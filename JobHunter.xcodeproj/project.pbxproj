@@ -138,13 +138,13 @@
 		A4DDEA3D28FF9C6B005DDDA8 /* JobHunter */ = {
 			isa = PBXGroup;
 			children = (
-				A456961229061E7200B4BB14 /* LoginViewController.swift */,
 				A4DDEA3E28FF9C6B005DDDA8 /* AppDelegate.swift */,
 				A4DDEA4028FF9C6B005DDDA8 /* SceneDelegate.swift */,
 				A4DDEA4428FF9C6B005DDDA8 /* Main.storyboard */,
 				A4DDEA4728FF9C70005DDDA8 /* Assets.xcassets */,
 				A4DDEA4928FF9C70005DDDA8 /* LaunchScreen.storyboard */,
 				A4DDEA4C28FF9C70005DDDA8 /* Info.plist */,
+				A456961229061E7200B4BB14 /* LoginViewController.swift */,
 				A4569616290623F800B4BB14 /* SignUpViewController.swift */,
 				487B3AD6290735B10082A750 /* MainViewController.swift */,
 				487B3AD82907366A0082A750 /* ChatViewController.swift */,

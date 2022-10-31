@@ -24,9 +24,11 @@ class MainViewController: UIViewController {
         configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
 
 
-        AF.request("https://data.usajobs.gov/api/search?Keyword=Software", method: .get, headers: headers).responseJSON { response in
-            print("Response: \(response)")
+        let request = AF.request("https://arbeitnow.com/api/job-board-api")
             
+        request.responseJSON{ (data) in
+            print(data)
+            }
         }
     }
     
@@ -41,4 +43,4 @@ class MainViewController: UIViewController {
     }
     */
 
-}
+

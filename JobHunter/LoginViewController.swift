@@ -31,18 +31,6 @@ class LoginViewController: UIViewController {
         }
     }
             
-            
-            
-            
-           
-//            else {
-//                let error = error
-//                self.displayFailAlert(withTitle: "Error", message: Error?.localizedDescription)
-//                print("Sign in error: \(String(describing: error?.localizedDescription))")
-//            }
-//        }
-//    }
-
     func displayFailAlert(withTitle title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default)

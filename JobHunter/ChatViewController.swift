@@ -16,6 +16,7 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         tableView.dataSource = self
         tableView.delegate = self
+        navigationItem.leftItemsSupplementBackButton = true
 
         // Do any additional setup after loading the view.
     }

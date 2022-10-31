@@ -6,13 +6,25 @@
 //
 
 import UIKit
+import Alamofire
+
 
 class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let url = URL(string: "https://data.usajobs.gov/api/search?Keyword=Software")
+        let apiKey = "hG4xxpCGhesumgUZwSSsqPVzvxge8N7gDLkmHbNtgro="
+        let userAgent = "prestonbarney123@gmail.com"
+
+        let headers = ["host": "prestonbarney123@gmail.com" , "Authorization-Key": "hG4xxpCGhesumgUZwSSsqPVzvxge8N7gDLkmHbNtgro="]
+
+        let configuration = URLSessionConfiguration.default
+        configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
+
+
+        AF.request("https://data.usajobs.gov/api/search?Keyword=Software", method: .get, headers: headers)
     }
     
 

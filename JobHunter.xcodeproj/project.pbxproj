@@ -15,8 +15,8 @@
 		487B3ADB290736BB0082A750 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B3ADA290736BB0082A750 /* ChatCell.swift */; };
 		487B3AE129073A5D0082A750 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B3AE029073A5D0082A750 /* MessageViewController.swift */; };
 		487B3AE32907686B0082A750 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487B3AE22907686A0082A750 /* ProfileViewController.swift */; };
-		A456961329061E7200B4BB14 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A456961229061E7200B4BB14 /* LoginViewController.swift */; };
 		A4569617290623F800B4BB14 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4569616290623F800B4BB14 /* SignUpViewController.swift */; };
+		A4840C28290F4B2400855C03 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4840C27290F4B2400855C03 /* LoginViewController.swift */; };
 		A4DDEA3F28FF9C6B005DDDA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDEA3E28FF9C6B005DDDA8 /* AppDelegate.swift */; };
 		A4DDEA4128FF9C6B005DDDA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDEA4028FF9C6B005DDDA8 /* SceneDelegate.swift */; };
 		A4DDEA4628FF9C6B005DDDA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4DDEA4428FF9C6B005DDDA8 /* Main.storyboard */; };
@@ -58,8 +58,8 @@
 		487B3AE22907686A0082A750 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		53B17EC3A240F8667C7600D8 /* Pods-JobHunter-JobHunterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHunter-JobHunterUITests.debug.xcconfig"; path = "Target Support Files/Pods-JobHunter-JobHunterUITests/Pods-JobHunter-JobHunterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B60B49EC01D0190A894D810 /* Pods-JobHunterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHunterTests.release.xcconfig"; path = "Target Support Files/Pods-JobHunterTests/Pods-JobHunterTests.release.xcconfig"; sourceTree = "<group>"; };
-		A456961229061E7200B4BB14 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A4569616290623F800B4BB14 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A4840C27290F4B2400855C03 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A4DDEA3B28FF9C6B005DDDA8 /* JobHunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobHunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4DDEA3E28FF9C6B005DDDA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4DDEA4028FF9C6B005DDDA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +151,7 @@
 				487B3ADA290736BB0082A750 /* ChatCell.swift */,
 				487B3AE029073A5D0082A750 /* MessageViewController.swift */,
 				487B3AE22907686A0082A750 /* ProfileViewController.swift */,
+				A4840C27290F4B2400855C03 /* LoginViewController.swift */,
 			);
 			path = JobHunter;
 			sourceTree = "<group>";
@@ -424,7 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A456961329061E7200B4BB14 /* LoginViewController.swift in Sources */,
+				A4840C28290F4B2400855C03 /* LoginViewController.swift in Sources */,
 				A4DDEA3F28FF9C6B005DDDA8 /* AppDelegate.swift in Sources */,
 				487B3AE129073A5D0082A750 /* MessageViewController.swift in Sources */,
 				A4569617290623F800B4BB14 /* SignUpViewController.swift in Sources */,

@@ -18,13 +18,16 @@ class MainViewController: UIViewController {
         let apiKey = "hG4xxpCGhesumgUZwSSsqPVzvxge8N7gDLkmHbNtgro="
         let userAgent = "prestonbarney123@gmail.com"
 
-        let headers = ["host": "prestonbarney123@gmail.com" , "Authorization-Key": "hG4xxpCGhesumgUZwSSsqPVzvxge8N7gDLkmHbNtgro="]
+        let headers: HTTPHeaders = ["Host": "data.usajobs.gov", "User-Agent": "prestonbarney123@gmail.com" , "Authorization-Key": apiKey]
 
         let configuration = URLSessionConfiguration.default
         configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
 
 
-        AF.request("https://data.usajobs.gov/api/search?Keyword=Software", method: .get, headers: headers)
+        AF.request("https://data.usajobs.gov/api/search?Keyword=Software", method: .get, headers: headers).responseJSON { response in
+            print("Response: \(response)")
+            
+        }
     }
     
 

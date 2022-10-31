@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DFb-JR-B1s">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DFb-JR-B1s">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,19 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGs-v8-tQJ" userLabel="Email Label">
-                                <rect key="frame" x="49" y="317" width="41" height="21"/>
+                                <rect key="frame" x="49" y="314" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V1x-Ey-cg7" userLabel="Email Text Field">
-                                <rect key="frame" x="48" y="346" width="294" height="34"/>
+                                <rect key="frame" x="48" y="343" width="294" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdW-V4-jsy" userLabel="Password Label">
-                                <rect key="frame" x="49" y="412" width="74" height="21"/>
+                                <rect key="frame" x="49" y="409" width="74" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,7 +49,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vUM-y7-R2Z" userLabel="Email Text Field">
-                                <rect key="frame" x="48" y="441" width="301" height="34"/>
+                                <rect key="frame" x="48" y="438" width="301" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="kia-Zy-VxI"/>
@@ -78,16 +77,15 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="onSignIn:" destination="DFb-JR-B1s" eventType="touchUpInside" id="sfK-Oq-9vR"/>
-                                    <segue destination="7Pd-co-0Jr" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="yC0-tW-OKU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thl-LS-Wyf" userLabel="Forgot Password Button">
-                                <rect key="frame" x="200" y="491" width="160" height="35.666666666666629"/>
+                                <rect key="frame" x="200" y="488" width="160" height="38.666666666666629"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Untitled design" translatesAutoresizingMaskIntoConstraints="NO" id="ZmJ-tS-mX5" userLabel="Job Hunter Logo">
-                                <rect key="frame" x="48" y="172" width="312" height="80"/>
+                                <rect key="frame" x="48" y="169" width="312" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZmJ-tS-mX5" secondAttribute="height" multiplier="39:10" id="6cW-0l-VyK"/>
                                 </constraints>
@@ -130,6 +128,7 @@
                     <connections>
                         <outlet property="emailText" destination="V1x-Ey-cg7" id="npt-Y2-XUt"/>
                         <outlet property="passwordText" destination="vUM-y7-R2Z" id="ClW-7y-hqa"/>
+                        <segue destination="7Pd-co-0Jr" kind="presentation" identifier="loginSegue" id="sSd-zl-4cL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nrD-VF-qV3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -145,25 +144,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6L-4l-Imn" userLabel="Full Name Label">
-                                <rect key="frame" x="45" y="273" width="77" height="21"/>
+                                <rect key="frame" x="45" y="270" width="77" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cXO-8G-NJm" userLabel="Name Text Field">
-                                <rect key="frame" x="45" y="302" width="300" height="34"/>
+                                <rect key="frame" x="45" y="299" width="300" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3H-X5-YA5" userLabel="Email Label">
-                                <rect key="frame" x="45" y="370" width="40.666666666666657" height="21"/>
+                                <rect key="frame" x="45" y="367" width="40.666666666666657" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="in4-ly-kr5" userLabel="Email Text Field">
-                                <rect key="frame" x="45" y="399" width="300" height="34.666666666666686"/>
+                                <rect key="frame" x="45" y="396" width="300" height="37.666666666666686"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -185,7 +184,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbQ-Zv-Q2K" userLabel="Upload Resume Button">
-                                <rect key="frame" x="45" y="126" width="300" height="93"/>
+                                <rect key="frame" x="45" y="123" width="300" height="93"/>
                                 <color key="backgroundColor" red="0.20052182669999999" green="0.050764374430000002" blue="0.5804284811" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rbQ-Zv-Q2K" secondAttribute="height" multiplier="100:31" id="dKC-wE-E61"/>
@@ -292,7 +291,7 @@
             <objects>
                 <viewController title="MainViewController" id="Jgk-MX-0nA" customClass="MainViewController" customModule="JobHunter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F3s-ki-jzI">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="esX-vX-FCv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -308,7 +307,7 @@
             <objects>
                 <viewController title="MessageViewController" id="jCI-NW-HkS" customClass="MessageViewController" customModule="JobHunter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P1u-V2-tCa">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="30X-6S-HvQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -324,7 +323,7 @@
             <objects>
                 <viewController title="ChatViewController" id="Hhd-0h-ynZ" customClass="ChatViewController" customModule="JobHunter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eut-0b-fvr">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bi3-qu-uk0">
@@ -333,7 +332,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatCell" rowHeight="100" id="vYQ-Sl-HYK" customClass="ChatCell" customModule="JobHunter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="390" height="100"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vYQ-Sl-HYK" id="b9r-22-zp6">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
@@ -414,7 +413,7 @@
                 <navigationController id="f4S-Yh-TDj" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Connect" image="message.fill" catalog="system" id="n13-AM-0W2"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lqv-2M-ins">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.20052182669999999" green="0.050764374430000002" blue="0.5804284811" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.20052182669999999" green="0.050764374430000002" blue="0.5804284811" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -444,18 +443,18 @@
             <objects>
                 <viewController title="ProfileViewController" id="VVC-a5-YkH" customClass="ProfileViewController" customModule="JobHunter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="frA-Nq-eTE">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dU7-hr-gKs">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="244"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="224"/>
                                 <color key="backgroundColor" red="0.20052182669999999" green="0.050764374430000002" blue="0.5804284811" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                 </accessibility>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6p-SY-nAS">
-                                <rect key="frame" x="25" y="294" width="191" height="30"/>
+                                <rect key="frame" x="25" y="274" width="191" height="30"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="i6E-O4-gCi"/>
@@ -472,7 +471,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGI-1j-6KC">
-                                <rect key="frame" x="25" y="352" width="340" height="32"/>
+                                <rect key="frame" x="25" y="332" width="340" height="32"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="340" id="4Sw-nQ-HCf"/>
@@ -489,7 +488,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lH-bJ-O6V">
-                                <rect key="frame" x="25" y="434" width="340" height="176"/>
+                                <rect key="frame" x="25" y="414" width="340" height="176"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="176" id="Taa-7H-Emw"/>
                                     <constraint firstAttribute="width" constant="340" id="w1L-ug-Fna"/>
@@ -514,7 +513,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOI-EV-A3p">
-                                <rect key="frame" x="25" y="683" width="340" height="33.666666666666629"/>
+                                <rect key="frame" x="25" y="663" width="340" height="33.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33.670000000000002" id="cLF-Rx-ktO"/>
                                     <constraint firstAttribute="width" constant="340" id="sX9-EZ-8Ok"/>
@@ -538,7 +537,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RAD-Hm-Gnb">
-                                <rect key="frame" x="234" y="172" width="140" height="140"/>
+                                <rect key="frame" x="234" y="125" width="140" height="167"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -608,9 +607,9 @@
     </scenes>
     <resources>
         <image name="Untitled design" width="390" height="101.33333587646484"/>
-        <image name="house.fill" catalog="system" width="128" height="104"/>
-        <image name="message.fill" catalog="system" width="128" height="114"/>
-        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="message.fill" catalog="system" width="128" height="113"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

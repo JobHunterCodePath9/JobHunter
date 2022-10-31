@@ -17,23 +17,28 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-    //for some reason I could still perform the segue without putting an email/password
+
     @IBAction func onSignIn(_ sender: Any) {
         let email = emailText.text!
         let password  = passwordText.text!
+        
 
-        PFUser.logInWithUsername(inBackground: email, password: password) { (user, error) in
-            if user != nil {
+        PFUser.logInWithUsername(inBackground: email, password: password) { (user, error: Error?) -> Void in
+            if let error = error {
+                self.displayFailAlert(withTitle: "Error", message: error.localizedDescription)
+            } else {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
-            }
-            else {
-                print("Sign in error: \(String(describing: error?.localizedDescription))")
             }
         }
     }
 
-    
+    func displayFailAlert(withTitle title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default)
+        alert.addAction(okAction)
+        self.present(alert, animated: true)
+        
+    }
    
     /*
     // MARK: - Navigation

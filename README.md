@@ -133,8 +133,8 @@ is looking for
    ----------|----------|------------
     `GET`    | /        | returns a list of random users with randomly generated attributes
     
-##### Arduna Job API
-- Base URL - [http://api.adzuna.com/v1/api/jobs](http://api.adzuna.com/v1/api/jobs)
+##### Arbeit Now Job API
+- Base URL - [https://arbeitnow.com/api/job-board-api)
 
    HTTP Verb | Endpoint | Description
    ----------|----------|------------
@@ -144,14 +144,4 @@ is looking for
 
 
     
-##### REED Job API
-- Base URL - [https://www.reed.co.uk/api/1.0](https://www.reed.co.uk/api/1.0)
-
-   HTTP Verb | Endpoint | Description
-   ----------|----------|------------
-    `GET`    | /employerID | searches jobs for that employer
-    `GET`    | /keywords | searches for jobs with all keywords
-    `GET`    | /locationName| searches for jobs in location
-
-
 

@@ -1,6 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
+
 target 'JobHunter' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
@@ -8,6 +9,8 @@ target 'JobHunter' do
   # Pods for JobHunter
   pod "AlamofireImage"
   pod "Parse"
+  pod "MessageKit"
+  pod "MessageInputBar"
 
   target 'JobHunterTests' do
     inherit! :search_paths

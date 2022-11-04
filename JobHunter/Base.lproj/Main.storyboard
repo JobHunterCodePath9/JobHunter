@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DFb-JR-B1s">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DFb-JR-B1s">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -307,13 +307,7 @@
         <scene sceneID="Z26-tj-szI">
             <objects>
                 <viewController title="MessageViewController" id="jCI-NW-HkS" customClass="MessageViewController" customModule="JobHunter" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="P1u-V2-tCa">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="30X-6S-HvQ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="sJj-F3-Kwg"/>
+                    <navigationItem key="navigationItem" title="Recruiter 1" id="sJj-F3-Kwg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Em5-Wh-7b6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -360,7 +354,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 mins ago" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIO-xa-s9B">
-                                                    <rect key="frame" x="305" y="26" width="65" height="48"/>
+                                                    <rect key="frame" x="286" y="26" width="84" height="48"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -378,10 +372,10 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="jze-0l-QJB" secondAttribute="bottom" constant="20" id="fSI-O4-zGw"/>
                                                 <constraint firstItem="n2U-PU-Lyh" firstAttribute="leading" secondItem="MRn-zA-nnD" secondAttribute="trailing" constant="8" symbolic="YES" id="hHC-Xq-xp0"/>
                                                 <constraint firstItem="MRn-zA-nnD" firstAttribute="top" secondItem="b9r-22-zp6" secondAttribute="top" constant="12" id="p65-tq-HmL"/>
-                                                <constraint firstItem="qIO-xa-s9B" firstAttribute="leading" secondItem="n2U-PU-Lyh" secondAttribute="trailing" constant="177" id="sN7-1G-XVx"/>
+                                                <constraint firstItem="qIO-xa-s9B" firstAttribute="leading" relation="lessThanOrEqual" secondItem="n2U-PU-Lyh" secondAttribute="trailing" constant="177" id="sN7-1G-XVx"/>
                                                 <constraint firstItem="qIO-xa-s9B" firstAttribute="trailing" secondItem="b9r-22-zp6" secondAttribute="trailingMargin" id="sua-Lq-CP4"/>
                                                 <constraint firstItem="n2U-PU-Lyh" firstAttribute="top" secondItem="b9r-22-zp6" secondAttribute="topMargin" constant="8" id="xa7-bn-pJ4"/>
-                                                <constraint firstItem="qIO-xa-s9B" firstAttribute="leading" secondItem="jze-0l-QJB" secondAttribute="trailing" constant="139" id="zRX-b6-s2a"/>
+                                                <constraint firstItem="qIO-xa-s9B" firstAttribute="leading" relation="lessThanOrEqual" secondItem="jze-0l-QJB" secondAttribute="trailing" constant="139" id="zRX-b6-s2a"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -407,6 +401,19 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sOr-Uy-A6p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1340" y="2163.9810426540284"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6pR-dd-ooQ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l2C-bK-tMn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="GhD-mw-VO6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eIA-hW-bfk">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="2463" y="2386"/>
         </scene>
         <!--Connect-->
         <scene sceneID="XWk-Z6-obS">
@@ -626,6 +633,7 @@
             <point key="canvasLocation" x="1340" y="736"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="Untitled design" width="390" height="101.33333587646484"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>

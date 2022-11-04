@@ -3,6 +3,14 @@ PODS:
   - AlamofireImage (4.2.0):
     - Alamofire (~> 5.4)
   - Bolts/Tasks (1.9.1)
+  - InputBarAccessoryView (5.5.0):
+    - InputBarAccessoryView/Core (= 5.5.0)
+  - InputBarAccessoryView/Core (5.5.0)
+  - MessageInputBar (0.4.1):
+    - MessageInputBar/Core (= 0.4.1)
+  - MessageInputBar/Core (0.4.1)
+  - MessageKit (3.8.0):
+    - InputBarAccessoryView (~> 5.5.0)
   - Parse (1.19.3):
     - Parse/Core (= 1.19.3)
   - Parse/Core (1.19.3):
@@ -10,6 +18,8 @@ PODS:
 
 DEPENDENCIES:
   - AlamofireImage
+  - MessageInputBar
+  - MessageKit
   - Parse
 
 SPEC REPOS:
@@ -17,14 +27,20 @@ SPEC REPOS:
     - Alamofire
     - AlamofireImage
     - Bolts
+    - InputBarAccessoryView
+    - MessageInputBar
+    - MessageKit
     - Parse
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
+  InputBarAccessoryView: 1d7b0a672b36e370f01f264b3907ef39d03328e3
+  MessageInputBar: e81c7535347f1f7b923de7080409a535a004b6e4
+  MessageKit: a1ba0c69ebead94029867853eb44dd05b9b3f453
   Parse: 0abb63a0ff6fa34a3f64b81d595a294e2ece143a
 
-PODFILE CHECKSUM: 771009e111ee1c4365a8826592dabebae1e50b52
+PODFILE CHECKSUM: 53cb1604f438942bd8839250f665bb453135bce6
 
 COCOAPODS: 1.11.3

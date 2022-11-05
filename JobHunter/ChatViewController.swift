@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -30,6 +31,20 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChatCell") as! ChatCell
         
         cell.companyNameLabel.text = "Recruiter 1"
+        
+        let query = PFQuery(className: "Chats")
+        query.findObjectsInBackground() { (chats, error) ->
+            Void in
+            if error == nil{
+                //no error in fetch
+                if let returnedChats = chats {
+                    if (returnedChats[returnedChats.count - 1]["Message"] != nil){
+                        //set it to current message
+                        cell.messageLabel.text = returnedChats[returnedChats.count - 1]["Message"] as? String
+                    }
+                }
+            }
+        }
         
         return cell
     }

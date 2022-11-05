@@ -26,6 +26,8 @@ struct Message: MessageType {
 
 class MessageViewController: MessagesViewController, MessagesDataSource, MessagesLayoutDelegate, MessagesDisplayDelegate, InputBarAccessoryViewDelegate {
     // inherits from class in cocoapod
+    
+    var selectedPost : PFObject!
 
 
     
@@ -37,13 +39,19 @@ class MessageViewController: MessagesViewController, MessagesDataSource, Message
     
     var messages = [MessageType]() // make this a parse var - later
     
-    let messageVars = PFObject(className: "Messages")
+    
+    
+    
+    
+    //store structs? or just strings of message content then iterate through
+    //Test message: I'm interested in this company's internship experience. Will I work closely with a mentor?
+    
     
     
 
     // to publish new message
     func inputBar(_ inputBar: InputBarAccessoryView, didPressSendButtonWith text: String) {
-        print(text)
+        //print(text)
         //add to parse : update messageId number based on messages.count
         
         let count = messages.count + 1 // update messageID everytime
@@ -54,24 +62,51 @@ class MessageViewController: MessagesViewController, MessagesDataSource, Message
     
         inputBar.inputTextView.text = ""
         messagesCollectionView.reloadData()
+        
+        //save messages in chat
+        let chats = PFObject(className: "Chats")
+        
+        chats["ChatId"] = "Recruiter 1"
+        chats["Message"] = text
+        chats["Author"] = user
+        
+        
+        chats.saveInBackground() { (success, error) in
+            if success {
+                print("saved")
+            } else{
+                print("error")
+            }
+        }
          
     }
     
     //Update profile images
-    /*func configureAvatarView(_ avatarView: AvatarView, for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) {
+    func configureAvatarView(_ avatarView: AvatarView, for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) {
         print("called")
-        //Need to fix this.
-        if(message.messageId == "currentUser" ){
-            
+        //56, 10, 154 = our custom logo color
+        let customPurple = UIColor(red: 56/255, green: 10/255, blue: 154/255, alpha: 1)
+      
+        //current user vs. recruiter set profilfe photos
+        if(indexPath.section != 0){
+            print(indexPath.section % 2)
             if (user?["profileImage"] != nil) {
                 let imageFile = user?["profileImage"] as! PFFileObject
                 let urlString = imageFile.url!
                 let url = URL(string: urlString)!
-            
+                
                 avatarView.af.setImage(withURL: url)
             }
+            else{
+                avatarView.backgroundColor = .white
+                avatarView.image = UIImage(systemName: "person.circle.fill")?.withTintColor(customPurple, renderingMode: .alwaysOriginal)
+            }
         }
-    }*/
+        else{
+            avatarView.backgroundColor = .white
+            avatarView.image = UIImage(systemName: "person.circle.fill")?.withTintColor(customPurple, renderingMode: .alwaysOriginal)
+        }
+    }
     
     
     
@@ -89,12 +124,35 @@ class MessageViewController: MessagesViewController, MessagesDataSource, Message
                                 kind: .text("Hello, Recruiter 1!")))
         
         
-        // struct, prob can't do this
-        
-        //test how many
-        print(messages.count)
-        
-        
+        let query = PFQuery(className: "Chats")
+        query.findObjectsInBackground() { (chats, error) ->
+            Void in
+            if error == nil{
+                //no error in fetch
+                if let returnedChats = chats{
+                    var count = self.messages.count + 1// starts with 2
+                    for message in returnedChats {
+                        if(message["Message"] != nil){
+                            print(message["Message"] as! String)
+                            print("This is in the Query.")
+                            
+                            //append messages based on content in chats
+                            //need to hook it up to selected chat and author
+                            if(message["ChatId"] as! String == "Recruiter 1") {
+                                self.messages.append(Message(sender: self.currentUser,
+                                                             messageId: "\(count)",
+                                                             sentDate: Date().addingTimeInterval(-86398),
+                                                             kind: .text(message["Message"] as! String)))
+                                self.messagesCollectionView.reloadData()
+                                
+                                count += 1 // update count for messageId
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
         
         
         
@@ -103,9 +161,10 @@ class MessageViewController: MessagesViewController, MessagesDataSource, Message
         messagesCollectionView.messagesDisplayDelegate = self
         messageInputBar.delegate = self
         
-        removeMessageAvatars()
         
     }
+    
+    
     
 
     
@@ -125,27 +184,6 @@ class MessageViewController: MessagesViewController, MessagesDataSource, Message
         return messages.count
     }
     
-    //removes avatars -> or fix adding profile image
-    private func removeMessageAvatars() {
-      guard
-        let layout = messagesCollectionView.collectionViewLayout
-          as? MessagesCollectionViewFlowLayout
-      else {
-        return
-      }
-      layout.textMessageSizeCalculator.outgoingAvatarSize = .zero
-      layout.textMessageSizeCalculator.incomingAvatarSize = .zero
-      layout.setMessageIncomingAvatarSize(.zero)
-      layout.setMessageOutgoingAvatarSize(.zero)
-      let incomingLabelAlignment = LabelAlignment(
-        textAlignment: .left,
-        textInsets: UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0))
-      layout.setMessageIncomingMessageTopLabelAlignment(incomingLabelAlignment)
-      let outgoingLabelAlignment = LabelAlignment(
-        textAlignment: .right,
-        textInsets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 15))
-      layout.setMessageOutgoingMessageTopLabelAlignment(outgoingLabelAlignment)
-    }
     
     
     
@@ -160,5 +198,7 @@ class MessageViewController: MessagesViewController, MessagesDataSource, Message
     */
 
 }
+
+
 
 

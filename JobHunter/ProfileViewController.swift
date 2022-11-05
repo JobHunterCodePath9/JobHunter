@@ -49,7 +49,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[.editedImage] as! UIImage // comes in a dictionary
         
-        let size = CGSize(width: 500, height: 500)
+        let size = CGSize(width: 200, height: 200)
         let scaledImage = image.af.imageScaled(to: size)
         
         profileImage.image = scaledImage

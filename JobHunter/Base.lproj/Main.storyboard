@@ -57,7 +57,7 @@
                                     <constraint firstAttribute="width" constant="301" id="nhe-lu-gzN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpk-Pj-tZM" userLabel="Login Button">
                                 <rect key="frame" x="49" y="566.66666666666663" width="300" height="49"/>
@@ -405,13 +405,13 @@
         <!--Navigation Controller-->
         <scene sceneID="6pR-dd-ooQ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="l2C-bK-tMn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="GhD-mw-VO6" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eIA-hW-bfk">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l2C-bK-tMn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2463" y="2386"/>
         </scene>

@@ -8,15 +8,66 @@
 import UIKit
 import Parse
 import AlamofireImage
+import MobileCoreServices
+import UniformTypeIdentifiers
 
-class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIDocumentMenuDelegate, UIDocumentPickerDelegate {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
     
+    func selectFiles() {
+        let types = UTType.types(tag: "json",
+                                 tagClass: UTTagClass.filenameExtension,
+                                 conformingTo: nil)
+        let documentPickerController = UIDocumentPickerViewController(
+                forOpeningContentTypes: types)
+        documentPickerController.delegate = self
+        self.present(documentPickerController, animated: true, completion: nil)
+    }
+    
+    func documentMenu(_ documentMenu: UIDocumentMenuViewController, didPickDocumentPicker documentPicker: UIDocumentPickerViewController) {
+        documentPicker.delegate = self
+        present(documentPicker, animated: true, completion: nil)
+    }
+    
+    
+    public func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
+        guard let myURL = urls.first else {
+            return
+        }
+        
+        //save pdf to add to parse
+        var myData = NSData(contentsOf: myURL)!
+        var pdfData = PFFileObject(name: "Resume", data: myData as Data) // this works but u can't access the pdf in parse -> saved as a bin file
+        
+        let user = PFUser.current()!
+        user["Resume"] = pdfData
+        
+        user.saveInBackground { (success, error) in
+            if success {
+                print("saved")
+            } else{
+                print("error")
+            }
+        }
+        
+        print("import result : \(myURL)")
+    }
+    
+    
+    
+    func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
+        print("view was cancelled")
+    }
+    
+    
     @IBAction func reuploadResumeButton(_ sender: Any) {
-        //Add functionality
+        let importMenu = UIDocumentMenuViewController(documentTypes: [String(kUTTypePDF)], in: .import)
+            importMenu.delegate = self
+            importMenu.modalPresentationStyle = .formSheet
+            self.present(importMenu, animated: true, completion: nil)
     }
     
     @IBAction func logoutButton(_ sender: Any) {

@@ -46,8 +46,6 @@ class MessageViewController: MessagesViewController, MessagesDataSource, Message
     //store structs? or just strings of message content then iterate through
     //Test message: I'm interested in this company's internship experience. Will I work closely with a mentor?
     
-    
-    
 
     // to publish new message
     func inputBar(_ inputBar: InputBarAccessoryView, didPressSendButtonWith text: String) {

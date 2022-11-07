@@ -8,8 +8,51 @@
 import UIKit
 import Parse
 import AlamofireImage
+import MobileCoreServices
+import UniformTypeIdentifiers
 
-class SignUpViewController: UIViewController {
+
+class SignUpViewController: UIViewController, UIDocumentMenuDelegate,UIDocumentPickerDelegate,UINavigationControllerDelegate {
+    //it is deprecated but it works fine
+    //you have to add files to your simulator to access them in the app
+    //to add a resume pdf to your simulator, add the file in the simulator folder
+    
+    var pdfData: PFFileObject!
+    
+    func selectFiles() {
+        let types = UTType.types(tag: "json",
+                                 tagClass: UTTagClass.filenameExtension,
+                                 conformingTo: nil)
+        let documentPickerController = UIDocumentPickerViewController(
+                forOpeningContentTypes: types)
+        documentPickerController.delegate = self
+        self.present(documentPickerController, animated: true, completion: nil)
+    }
+    
+    func documentMenu(_ documentMenu: UIDocumentMenuViewController, didPickDocumentPicker documentPicker: UIDocumentPickerViewController) {
+        documentPicker.delegate = self
+        present(documentPicker, animated: true, completion: nil)
+    }
+    
+    
+    public func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
+        guard let myURL = urls.first else {
+            return
+        }
+        
+        //save pdf in global var to add to parse
+        var myData = NSData(contentsOf: myURL)!
+        self.pdfData = PFFileObject(name: "Resume", data: myData as Data) // this works but u can't access the pdf in parse -> saved as a bin file
+        
+        print("import result : \(myURL)")
+    }
+    
+    
+    
+    func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
+        print("view was cancelled")
+    }
+    
 
     @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var emailText: UITextField!
@@ -22,9 +65,14 @@ class SignUpViewController: UIViewController {
     }
 
     @IBAction func onUploadResume(_ sender: Any) {
-        
+        let importMenu = UIDocumentMenuViewController(documentTypes: [String(kUTTypePDF)], in: .import)
+            importMenu.delegate = self
+            importMenu.modalPresentationStyle = .formSheet
+            self.present(importMenu, animated: true, completion: nil)
         
     }
+    
+    
     @IBAction func onRegister(_ sender: Any) {
 
         var username = self.nameText.text
@@ -40,6 +88,8 @@ class SignUpViewController: UIViewController {
         user.email = email
         user.password = password
         user.username = username
+        user["Resume"] = pdfData // might be an error
+        
         
         user.signUpInBackground {(succeeded: Bool, error: Error?) -> Void in
             if let error = error {
@@ -48,6 +98,13 @@ class SignUpViewController: UIViewController {
                 self.displaySuccessAlert(withTitle: "Success", message: "Account has been successfully created")
             }
         }
+        
+        //add resume to cre
+        //let currentUser = PFUser.current()!
+        
+        
+        
+        
         // neef fix: should display msg then perfom segue, login should check if user exist rather than auto sign in 
         //self.performSegue(withIdentifier: "signinSegue", sender: nil)
                 

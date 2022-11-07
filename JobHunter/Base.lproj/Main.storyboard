@@ -202,6 +202,9 @@
                                         </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onUploadResume:" destination="8Ax-Jg-jlL" eventType="touchUpInside" id="Y4V-8y-XsM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEr-s9-eUb" userLabel="Registor Button">
                                 <rect key="frame" x="45" y="591.66666666666663" width="300" height="49"/>

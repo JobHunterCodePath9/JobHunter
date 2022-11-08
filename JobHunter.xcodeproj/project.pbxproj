@@ -25,10 +25,7 @@
 		A4DDEA5628FF9C70005DDDA8 /* JobHunterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDEA5528FF9C70005DDDA8 /* JobHunterTests.swift */; };
 		A4DDEA6028FF9C70005DDDA8 /* JobHunterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDEA5F28FF9C70005DDDA8 /* JobHunterUITests.swift */; };
 		A4DDEA6228FF9C70005DDDA8 /* JobHunterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDEA6128FF9C70005DDDA8 /* JobHunterUITestsLaunchTests.swift */; };
-		C7637C1429106286006E8B6C /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7637C1329106286006E8B6C /* Job.swift */; };
-		C7708E23291039BF007B4546 /* JobAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7708E22291039BF007B4546 /* JobAPICaller.swift */; };
 		C7D5ACFB2919ACD900862D9A /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D5ACFA2919ACD900862D9A /* Media.xcassets */; };
-		C7D5AD032919B7A900862D9A /* TinderCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D5AD022919B7A900862D9A /* TinderCardModel.swift */; };
 		C7D5AD072919CC3300862D9A /* JobCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D5AD062919CC3300862D9A /* JobCardContentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,10 +74,7 @@
 		A4DDEA5B28FF9C70005DDDA8 /* JobHunterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobHunterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4DDEA5F28FF9C70005DDDA8 /* JobHunterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHunterUITests.swift; sourceTree = "<group>"; };
 		A4DDEA6128FF9C70005DDDA8 /* JobHunterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHunterUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C7637C1329106286006E8B6C /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
-		C7708E22291039BF007B4546 /* JobAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobAPICaller.swift; sourceTree = "<group>"; };
 		C7D5ACFA2919ACD900862D9A /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		C7D5AD022919B7A900862D9A /* TinderCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderCardModel.swift; sourceTree = "<group>"; };
 		C7D5AD062919CC3300862D9A /* JobCardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCardContentView.swift; sourceTree = "<group>"; };
 		E5EC67D1E44D182F33818FA9 /* Pods-JobHunter-JobHunterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHunter-JobHunterUITests.release.xcconfig"; path = "Target Support Files/Pods-JobHunter-JobHunterUITests/Pods-JobHunter-JobHunterUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,14 +153,11 @@
 				A456961229061E7200B4BB14 /* LoginViewController.swift */,
 				A4569616290623F800B4BB14 /* SignUpViewController.swift */,
 				487B3AD6290735B10082A750 /* MainViewController.swift */,
-				C7D5AD022919B7A900862D9A /* TinderCardModel.swift */,
 				C7D5AD062919CC3300862D9A /* JobCardContentView.swift */,
 				487B3AD82907366A0082A750 /* ChatViewController.swift */,
 				487B3ADA290736BB0082A750 /* ChatCell.swift */,
 				487B3AE029073A5D0082A750 /* MessageViewController.swift */,
 				487B3AE22907686A0082A750 /* ProfileViewController.swift */,
-				C7708E22291039BF007B4546 /* JobAPICaller.swift */,
-				C7637C1329106286006E8B6C /* Job.swift */,
 			);
 			path = JobHunter;
 			sourceTree = "<group>";
@@ -448,16 +439,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7D5AD032919B7A900862D9A /* TinderCardModel.swift in Sources */,
 				A456961329061E7200B4BB14 /* LoginViewController.swift in Sources */,
 				A4DDEA3F28FF9C6B005DDDA8 /* AppDelegate.swift in Sources */,
 				487B3AE129073A5D0082A750 /* MessageViewController.swift in Sources */,
-				C7708E23291039BF007B4546 /* JobAPICaller.swift in Sources */,
 				A4569617290623F800B4BB14 /* SignUpViewController.swift in Sources */,
 				A4DDEA4128FF9C6B005DDDA8 /* SceneDelegate.swift in Sources */,
 				C7D5AD072919CC3300862D9A /* JobCardContentView.swift in Sources */,
 				487B3ADB290736BB0082A750 /* ChatCell.swift in Sources */,
-				C7637C1429106286006E8B6C /* Job.swift in Sources */,
 				487B3AE32907686B0082A750 /* ProfileViewController.swift in Sources */,
 				487B3AD92907366A0082A750 /* ChatViewController.swift in Sources */,
 				487B3AD7290735B10082A750 /* MainViewController.swift in Sources */,

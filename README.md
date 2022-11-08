@@ -67,6 +67,10 @@ is looking for
 
 <img src = "sprint2ss.gif" width=600>
 
+## Sprint 3
+
+<img src = "sprint3ss.gif width=600> 
+
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)

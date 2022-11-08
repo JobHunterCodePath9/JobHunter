@@ -7,36 +7,73 @@
 
 import UIKit
 import Alamofire
+import Shuffle_iOS
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, SwipeCardStackDataSource, SwipeCardStackDelegate {
+    
+    private let cardStack = SwipeCardStack()
+    
+    // Model to hold data that we will extract from the JSON response
+          struct JobCard: Codable {
+              var companyName: String
+              var jobTitle: String
+              var jobDescription: String
+              var remote: Bool
+              var location: String
+          }
+          
+
+    
+    func loadTextView1(textFill: String )-> UITextView {
+        let textView1 = UITextView(frame: CGRect(x: 15, y: 29, width: 290, height: 288))
+        textView1.text = textFill
+       
+        
+        textView1.backgroundColor = .white
+
+        textView1.isEditable = false
+
+        return textView1
+    }
+    
+    func cardStack(_ cardStack: SwipeCardStack, cardForIndexAt index: Int) -> SwipeCard {
+        let job = jobs[index]
+        
+        let card = SwipeCard()
+        card.swipeDirections = [.left, .right]
+        card.footerHeight = 80
+        card.content = loadTextView1(textFill: job.jobDescription)
+        card.footer = loadTextView1(textFill: job.jobTitle)
+        card.clipsToBounds = true
+
+        
+        let leftOverlay = UIView()
+        leftOverlay.backgroundColor = .red
+         
+        let rightOverlay = UIView()
+        rightOverlay.backgroundColor = .green
+         
+        card.setOverlays([.left: leftOverlay, .right: rightOverlay])
+        
+        return card
+    }
+    
+    func numberOfCards(in cardStack: SwipeCardStack) -> Int {
+        return jobs.count
+    }
+    
+        
+    var jobs = [JobCard]()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        //        let url = URL(string: "https://data.usajobs.gov/api/search?Keyword=Software")
-        //        let apiKey = "hG4xxpCGhesumgUZwSSsqPVzvxge8N7gDLkmHbNtgro="
-        //        let userAgent = "prestonbarney123@gmail.com"
-        //
-        //        let headers: HTTPHeaders = ["Host": "data.usajobs.gov", "User-Agent": "prestonbarney123@gmail.com" , "Authorization-Key": apiKey]
-        
-        
         // Model to hold data that we will extract from the JSON response
-        struct Job: Codable {
-            var companyName: String
-            var jobTitle: String
-            var jobDescription: String
-            var remote: Bool
-            var location: String
-        }
-        
-        
         let configuration = URLSessionConfiguration.default
         configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
         
         // Array to hold extracted jobs
-        var jobs = [Job]()
-        
         AF.request("https://arbeitnow.com/api/job-board-api").responseJSON { response in
             switch response.result {
                 
@@ -54,7 +91,7 @@ class MainViewController: UIViewController {
                     let location = listing.object(forKey: "location")
                     
                     // creating a job object to add to dictionary
-                    let temp = Job(
+                    let temp = JobCard(
                         companyName: companyName as! String,
                         jobTitle: jobTitle as! String,
                         jobDescription: jobDescription as! String,
@@ -62,31 +99,26 @@ class MainViewController: UIViewController {
                         location: location as! String
                     )
                     
-                    jobs.append(temp)
+                    self.jobs.append(temp)
+                    
                 }
                 
                 // testing output
-                for job in jobs {
-                    print(job)
-                }
+                print(self.jobs.count)
+                self.cardStack.dataSource = self
+                self.cardStack.delegate = self
+                self.cardStack.frame = CGRect(x: 0,
+                                         y: 0,
+                                              width: self.view.frame.width - 50,
+                                              height: self.view.frame.height - 150)
+                self.cardStack.center = self.view.center
+                self.view.addSubview(self.cardStack)
                 
             case.failure(let error):
                 print("error: \(error)")
             }
             
         }
-        
-        
-        
-        /*
-         // MARK: - Navigation
-         
-         // In a storyboard-based application, you will often want to do a little preparation before navigation
-         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         // Get the new view controller using segue.destination.
-         // Pass the selected object to the new view controller.
-         }
-         */
         
     }
 }

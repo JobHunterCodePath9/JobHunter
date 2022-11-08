@@ -4,6 +4,7 @@
 
 target 'JobHunter' do
   # Comment the next line if you don't want to use dynamic frameworks
+
   use_frameworks!
 
   # Pods for JobHunter
@@ -11,7 +12,9 @@ target 'JobHunter' do
   pod "Parse"
   pod "MessageKit"
   pod "MessageInputBar"
-
+  pod "Koloda"
+  pod 'Shuffle-iOS'
+  
   target 'JobHunterTests' do
     inherit! :search_paths
     # Pods for testing

@@ -69,7 +69,7 @@ is looking for
 
 ## Sprint 3
 
-<img src = "sprint3ss.gif width=600> 
+<img src = "sprint3ss.gif" width=600> 
 
 ### 3. Navigation
 

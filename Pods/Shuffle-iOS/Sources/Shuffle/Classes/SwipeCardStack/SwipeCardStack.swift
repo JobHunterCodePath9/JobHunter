@@ -24,6 +24,7 @@
 
 import UIKit
 
+@IBDesignable
 open class SwipeCardStack: UIView, SwipeCardDelegate, UIGestureRecognizerDelegate {
 
   /// A internal structure for a `SwipeCard` and it's corresponding index in the card stack's `dataSource`.

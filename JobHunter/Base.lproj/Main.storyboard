@@ -293,20 +293,33 @@
                     <view key="view" contentMode="scaleToFill" id="F3s-ki-jzI">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5XD-B0-EyW" customClass="SwipeCardStack" customModule="Shuffle_iOS">
+                                <rect key="frame" x="60" y="121" width="269" height="563"/>
+                                <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.5" height="0.5"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="esX-vX-FCv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="KKB-Yk-PoO"/>
+                    <connections>
+                        <outlet property="cardStack" destination="5XD-B0-EyW" id="9KF-fX-ub0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jj0-cQ-GXt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="540" y="1472"/>
+            <point key="canvasLocation" x="540" y="1471.5639810426539"/>
         </scene>
         <!--MessageViewController-->
         <scene sceneID="Z26-tj-szI">
             <objects>
                 <viewController title="MessageViewController" id="jCI-NW-HkS" customClass="MessageViewController" customModule="JobHunter" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Recruiter 1" id="sJj-F3-Kwg"/>
+                    <navigationItem key="navigationItem" title="Recruiter 1" id="sJj-F3-Kwg">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="3UC-1m-smB"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Em5-Wh-7b6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -611,6 +624,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="standardAppearance"/>
                     </tabBar>
                     <connections>
                         <segue destination="VVC-a5-YkH" kind="relationship" relationship="viewControllers" id="6R1-75-H0P"/>

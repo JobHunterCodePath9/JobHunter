@@ -27,6 +27,7 @@
 		A4DDEA6228FF9C70005DDDA8 /* JobHunterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDEA6128FF9C70005DDDA8 /* JobHunterUITestsLaunchTests.swift */; };
 		C7D5ACFB2919ACD900862D9A /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D5ACFA2919ACD900862D9A /* Media.xcassets */; };
 		C7D5AD072919CC3300862D9A /* JobCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D5AD062919CC3300862D9A /* JobCardContentView.swift */; };
+		C7D5AD11291A2E2400862D9A /* JobCardHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D5AD10291A2E2300862D9A /* JobCardHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		A4DDEA6128FF9C70005DDDA8 /* JobHunterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHunterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C7D5ACFA2919ACD900862D9A /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		C7D5AD062919CC3300862D9A /* JobCardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCardContentView.swift; sourceTree = "<group>"; };
+		C7D5AD10291A2E2300862D9A /* JobCardHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCardHeaderView.swift; sourceTree = "<group>"; };
+		C7D5AD14291AD96E00862D9A /* JobHunter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JobHunter.entitlements; sourceTree = "<group>"; };
 		E5EC67D1E44D182F33818FA9 /* Pods-JobHunter-JobHunterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHunter-JobHunterUITests.release.xcconfig"; path = "Target Support Files/Pods-JobHunter-JobHunterUITests/Pods-JobHunter-JobHunterUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +145,7 @@
 		A4DDEA3D28FF9C6B005DDDA8 /* JobHunter */ = {
 			isa = PBXGroup;
 			children = (
+				C7D5AD14291AD96E00862D9A /* JobHunter.entitlements */,
 				C7D5ACF929199E6700862D9A /* media */,
 				A4DDEA3E28FF9C6B005DDDA8 /* AppDelegate.swift */,
 				C7D5ACFA2919ACD900862D9A /* Media.xcassets */,
@@ -152,6 +156,7 @@
 				A4DDEA4C28FF9C70005DDDA8 /* Info.plist */,
 				A456961229061E7200B4BB14 /* LoginViewController.swift */,
 				A4569616290623F800B4BB14 /* SignUpViewController.swift */,
+				C7D5AD10291A2E2300862D9A /* JobCardHeaderView.swift */,
 				487B3AD6290735B10082A750 /* MainViewController.swift */,
 				C7D5AD062919CC3300862D9A /* JobCardContentView.swift */,
 				487B3AD82907366A0082A750 /* ChatViewController.swift */,
@@ -440,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A456961329061E7200B4BB14 /* LoginViewController.swift in Sources */,
+				C7D5AD11291A2E2400862D9A /* JobCardHeaderView.swift in Sources */,
 				A4DDEA3F28FF9C6B005DDDA8 /* AppDelegate.swift in Sources */,
 				487B3AE129073A5D0082A750 /* MessageViewController.swift in Sources */,
 				A4569617290623F800B4BB14 /* SignUpViewController.swift in Sources */,
@@ -624,9 +630,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JobHunter/JobHunter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LQRUCN56PN;
+				DEVELOPMENT_TEAM = 4Q79H3B583;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JobHunter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -641,6 +648,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yfsdevelop.JobHunter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -653,9 +661,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JobHunter/JobHunter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LQRUCN56PN;
+				DEVELOPMENT_TEAM = 4Q79H3B583;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JobHunter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -670,6 +679,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yfsdevelop.JobHunter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

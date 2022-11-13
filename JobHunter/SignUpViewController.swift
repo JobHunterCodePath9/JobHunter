@@ -17,6 +17,7 @@ class SignUpViewController: UIViewController, UIDocumentMenuDelegate, UIDocument
     //to add a resume pdf to your simulator, add the file in the simulator folder
     
     var pdfData: PFFileObject!
+    let resumeUploaded = false
     
     func selectFiles() {
         let types = UTType.types(tag: "json",
@@ -42,6 +43,7 @@ class SignUpViewController: UIViewController, UIDocumentMenuDelegate, UIDocument
         //save pdf in global var to add to parse
         var myData = NSData(contentsOf: myURL)!
         self.pdfData = PFFileObject(name: "Resume", data: myData as Data) // this works but u can't access the pdf in parse -> saved as a bin file
+        
         
         print("import result : \(myURL)")
     }
@@ -76,22 +78,25 @@ class SignUpViewController: UIViewController, UIDocumentMenuDelegate, UIDocument
         var password = self.passwordText.text
         var email = self.emailText.text
        
-        if (email!.isEmpty || username!.isEmpty || password!.isEmpty) {
+        if (email!.isEmpty || username!.isEmpty || password!.isEmpty || resumeUploaded) {
             self.displayFailAlert(withTitle: "Error", message: "All fields are required")
         }
-        
-        let user = PFUser()
-                
-        user.email = email
-        user.password = password
-        user.username = username
-        user["Resume"] = pdfData // add resume column
-        
-        user.signUpInBackground {(succeeded: Bool, error: Error?) -> Void in
-            if let error = error {
-                self.displayFailAlert(withTitle: "Error", message: error.localizedDescription)
-            } else {
-                self.displaySuccessAlert(withTitle: "Success", message: "Account has been successfully created")
+        else{
+            //if some field is not empty then create user
+            let user = PFUser()
+            
+            user.email = email
+            user.password = password
+            user.username = username
+            //might need to add resume check
+            user["Resume"] = pdfData // add resume column
+            
+            user.signUpInBackground {(succeeded: Bool, error: Error?) -> Void in
+                if let error = error {
+                    self.displayFailAlert(withTitle: "Error", message: error.localizedDescription)
+                } else {
+                    self.displaySuccessAlert(withTitle: "Success", message: "Account has been successfully created")
+                }
             }
         }
         // neef fix: should display msg then perfom segue, login should check if user exist rather than auto sign in 

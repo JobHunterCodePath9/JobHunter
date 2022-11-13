@@ -34,6 +34,7 @@ class MessageViewController: MessagesViewController, MessagesDataSource, Message
     let user = PFUser.current() // add parse functionality
     //let chats = PFObject(className: "Chats")
     
+    //current user is dependent on whose view
     let currentUser = Sender(senderId: "self", displayName: "Job Hunter")
     let otherUser = Sender(senderId: "other", displayName: "Recruiter 1")
     
@@ -66,7 +67,7 @@ class MessageViewController: MessagesViewController, MessagesDataSource, Message
         //save messages in chat
         let chats = PFObject(className: "Chats")
         
-        chats["ChatId"] = "Recruiter 1"
+        chats["ChatId"] = "Recruiter 1" // change this to OtherSender then link it to recruiter's account
         chats["Message"] = text
         chats["Author"] = user
         
@@ -88,8 +89,8 @@ class MessageViewController: MessagesViewController, MessagesDataSource, Message
         let customPurple = UIColor(red: 56/255, green: 10/255, blue: 154/255, alpha: 1)
       
         //current user vs. recruiter set profilfe photos
-        if(indexPath.section != 0){
-            print(indexPath.section % 2)
+        if(messages[indexPath.section].sender.senderId == "self"){
+            //print(indexPath.section % 2)
             if (user?["profileImage"] != nil) {
                 let imageFile = user?["profileImage"] as! PFFileObject
                 let urlString = imageFile.url!
@@ -97,14 +98,15 @@ class MessageViewController: MessagesViewController, MessagesDataSource, Message
                 
                 avatarView.af.setImage(withURL: url)
             }
-            else{
+            else {
                 avatarView.backgroundColor = .white
                 avatarView.image = UIImage(systemName: "person.circle.fill")?.withTintColor(customPurple, renderingMode: .alwaysOriginal)
             }
         }
-        else{
+        else { // recruiter
             avatarView.backgroundColor = .white
             avatarView.image = UIImage(systemName: "person.circle.fill")?.withTintColor(customPurple, renderingMode: .alwaysOriginal)
+            
         }
     }
     
